@@ -17,7 +17,15 @@ public class UrlShortener {
     private static final String alphabets = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     public static void main(String[] args) throws IOException {
-        HttpServer server = HttpServer.create(new InetSocketAddress(9090),0);
+        int port = 9090; // default
+        String portEnv = System.getenv("PORT");
+        if(portEnv != null) {
+            port = Integer.parseInt(portEnv);
+        }
+
+        HttpServer server = HttpServer.create(new InetSocketAddress(port), 0);
+
+        
         server.createContext("/", exchange -> {
             File file = new File("index.html");
             if(!file.exists()){
