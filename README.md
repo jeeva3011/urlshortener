@@ -1,7 +1,7 @@
 # urlshortener
 Developed a lightweight URL shortening service using plain Java and the built-in HttpServer class. The application allows users to convert long URLs into short, easy-to-share links and supports redirection from the shortened URL to the original link.
 
-Key Features:
+**Key Features:**
 
 URL Shortening: Users can submit a long URL via a web interface or HTTP request, and the application generates a unique short code.
 
@@ -17,7 +17,7 @@ JSON/Plain Text Support: Supports sending requests as JSON or plain text for fle
 
 Atomic ID Encoding: Converts numeric IDs into alphanumeric short codes using a custom base-52 encoding scheme.
 
-Technologies Used:
+**Technologies Used:**
 
 Java (SE)
 
@@ -27,16 +27,4 @@ HTML/CSS and vanilla JavaScript for frontend
 
 JSON for API communication
 
-Learning Outcomes / Skills Demonstrated:
 
-Implementing HTTP server endpoints in Java without frameworks
-
-Handling POST and GET requests
-
-URL encoding and unique ID generation
-
-Frontend-backend integration with JavaScript fetch API
-
-Managing in-memory data structures (HashMap, AtomicLong)
-
-Understanding HTTP status codes and redirection (302)
