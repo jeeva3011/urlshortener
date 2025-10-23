@@ -1,1 +1,1 @@
-web: javac UrlShortener.java && java UrlShortener
+web: java UrlShortener
